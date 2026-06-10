@@ -33,8 +33,8 @@ if (!$resultado['exito']) {
     exit;
 }
 
-$_SESSION['exito_registro'] = $resultado['mensaje'];
 $_SESSION['usuario_registrado_id'] = $resultado['id_usuario'];
+$_SESSION['fase_qr_pendiente'] = true;
 
-header('Location: ../views/registro.php');
+header('Location: ../views/activar_2fa.php');
 exit;
