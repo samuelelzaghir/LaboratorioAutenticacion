@@ -48,10 +48,6 @@ $qrUrl = $twoFactor->generarUrlQR($usuario['correo'], $secret);
             </div>
 
             <p class="subtitulo">
-                Clave manual: <?php echo htmlspecialchars($secret, ENT_QUOTES, 'UTF-8'); ?>
-            </p>
-
-            <p class="subtitulo">
                 Usuario: <?php echo htmlspecialchars($usuario['usuario'], ENT_QUOTES, 'UTF-8'); ?>
             </p>
 
